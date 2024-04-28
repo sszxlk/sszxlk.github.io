@@ -62,7 +62,7 @@ Because of the irregularities on the object's surface and variations in lighting
 - <code class="language-plaintext highlighter-rouge">Renewable and Sustainable Energy Reviews</code> Zhang, R., Xu, X., **Liu, K.**, Kong, L., Wang, W., & Wortmann, T. [**Airflow modelling for building design: A designers' review**](https://doi.org/10.1016/j.rser.2024.114380), 2024, 197, 114380.
 
 ## 📚 Books
-- <code class="language-plaintext highlighter-rouge">东南大学出版社</code> **能源绩效驱动的城市形态生成与优化**, 徐小东, **刘可**, 王伟.
+- <code class="language-plaintext highlighter-rouge">东南大学出版社</code> 徐小东, **刘可**, 王伟. **能源绩效驱动的城市形态生成与优化**, 2022.
 
 <!-- 
 ## 📚 Patents
