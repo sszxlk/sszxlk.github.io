@@ -8,6 +8,7 @@
 # Site Settings
 title                    : "Ke Liu's Personal Homepage"
 description              : "A Ph.D. student in Architecture"
+repository               : "sszxlk/sszxlk.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics
