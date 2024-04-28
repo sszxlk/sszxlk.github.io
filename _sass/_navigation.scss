@@ -174,16 +174,8 @@
 
 .greedy-nav {
   position: relative;
-  width: 100vw; // 宽度为视口宽度
-  height: 50px; // 设置你想要的高度
-  padding: 10px 0; // 上下各增加 10px，可以根据需要调整
-  top: 0; // 顶部对齐
-  left: 50%; // 水平居中
-  transform: translateX(-50%); // 使用 transform 来确保完全居中
+  min-width: 250px;
   background: #FFC300; // 蓝色背景
-  margin-left: -50vw;
-  margin-right: -50vw; // 这两行确保宽度正确
-  box-sizing: border-box; // 确保 padding 不影响最终计算的宽度
 
   a {
     display: block;
