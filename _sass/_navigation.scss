@@ -175,13 +175,13 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: #FFC300; // 蓝色背景
+  background: $background-color;
 
   a {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: #ffffff; // 将文字颜色改为白色
+    color: $masthead-link-color;
     text-decoration: none;
 
     &:hover {
