@@ -30,6 +30,10 @@
     a {
       text-decoration: none;
       color: #1B2631;  // 深蓝色文字
+
+      &:hover {
+        color: #ffffff;  // 鼠标悬停时变为白色
+      }
     }
   }
 }
@@ -43,8 +47,12 @@
     list-style-type: none;
   }
 
-  li a {  // 确保所有链接均为深蓝色
+  li a {  // 确保所有链接均为深蓝色，并在悬停时变白
     color: #1B2631;
+    
+    &:hover {
+      color: #ffffff;  // 鼠标悬停时变为白色
+    }
   }
 }
 
@@ -63,6 +71,10 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
-    color: #1B2631;  // 为大字体菜单项设置深蓝色字体
+    color: #1B2631;  // 深蓝色字体
+
+    &:hover {
+      color: #ffffff;  // 也为大字体菜单项设置悬停效果为白色
+    }
   }
 }
