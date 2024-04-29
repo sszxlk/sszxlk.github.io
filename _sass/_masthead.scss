@@ -5,7 +5,7 @@
 .masthead {
   position: sticky;
   top: 0;
-  background-color: #FFB414;  // 黄色背景
+  background-color: #FFB414;  // 橙色背景
   border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -29,7 +29,7 @@
 
     a {
       text-decoration: none;
-      color: #1B2631;  // 设置链接为白色
+      color: #1B2631;  // 深蓝色文字
     }
   }
 }
@@ -43,7 +43,7 @@
     list-style-type: none;
   }
 
-  li a {  // 确保所有链接均为白色
+  li a {  // 确保所有链接均为深蓝色
     color: #1B2631;
   }
 }
@@ -63,6 +63,6 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
-    color: #1B2631;  // 为大字体菜单项设置白色字体
+    color: #1B2631;  // 为大字体菜单项设置深蓝色字体
   }
 }
