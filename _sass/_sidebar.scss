@@ -120,7 +120,8 @@
 }
 
 .author__name {
-    margin-bottom: 40px;
+   margin: 0;
+   margin-bottom: 1rem; // 添加下边距
 }
 
 .sidebar .author__name {
@@ -132,7 +133,7 @@
 }
 
 .author__bio {
-    margin-bottom: 40px;
+   margin-bottom: 2rem; // 增加下边距
 }
 
 .author__urls-wrapper {
