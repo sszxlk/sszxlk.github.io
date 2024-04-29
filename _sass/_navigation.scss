@@ -1,4 +1,4 @@
-/* ==========================================================================
+==========================================================================
    NAVIGATION
    ========================================================================== */
 
@@ -175,39 +175,17 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: #FFB414; // 使用你之前设定的背景色
+  background: #FFB414;
 
   a {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color; // 默认颜色设置
+    color: $masthead-link-color;
     text-decoration: none;
 
     &:hover {
-      color: #ffffff; // 悬停时文字颜色变为白色
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 4px;
-      background: mix(#fff, $primary-color, 50%); // 调整为初始状态下颜色
-      width: 100%;
-      -webkit-transition: $global-transition;
-      transition: $global-transition;
-      -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      transform: scaleX(0); // 初始化时隐藏
-    }
-
-    &:hover:before {
-      background: #ffffff; // 悬停时下划线颜色变为白色
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); // 悬停时显示
+      color: $masthead-link-color-hover;
     }
   }
 
@@ -244,6 +222,31 @@
         }
       }
     }
+
+    a {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background: #ffffff;
+        width: 100%;
+        -webkit-transition: $global-transition;
+        transition: $global-transition;
+        -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+                transform: scaleX(0); /* hide*/
+      }
+
+      &:hover:before {
+        -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+                transform: scaleX(1); /* reveal*/
+      }
+    }
   }
 
   .hidden-links {
@@ -265,6 +268,41 @@
       &:hover {
         color: $masthead-link-color-hover;
         background: mix(#fff, $primary-color, 75%);
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      right: 10px;
+      width: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: $border-color transparent;
+      display: block;
+      z-index: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      width: 0;
+      border-style: solid;
+      border-width: 0 10px 10px;
+      border-color: #fff transparent;
+      display: block;
+      z-index: 1;
+    }
+
+    li {
+      display: block;
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border-bottom: none;
       }
     }
   }
