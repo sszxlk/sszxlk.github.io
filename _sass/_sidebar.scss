@@ -120,9 +120,13 @@
 }
 
 .author__name {
+  margin: 0;
+
   @include breakpoint($large) {
-    line-height: 1.8; // 增加行高
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+}
 
 .sidebar .author__name {
   @include breakpoint($medium) {
@@ -133,7 +137,12 @@
 }
 
 .author__bio {
-   margin-bottom: 2rem; // 增加下边距
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 .author__urls-wrapper {
