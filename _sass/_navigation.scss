@@ -1,4 +1,4 @@
-==========================================================================
+/* ==========================================================================
    NAVIGATION
    ========================================================================== */
 
@@ -178,29 +178,16 @@
   background: #FFB414;
 
   a {
-    display: inline-block;  // 确保链接根据内容设置宽度
+    display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
-    position: relative;  // 确保伪元素定位正确
 
-    &:before {
-        content: "";
-        position: absolute;
-        left: 50%;  // 将开始点设置在中间
-        transform: translateX(-50%) scaleX(0); // 水平居中并初始化为隐藏
-        bottom: 0;
-        height: 4px;
-        background: mix(#fff, $primary-color, 50%);
-        transition: transform 0.3s ease-in-out;
-        width: var(--link-width, 100%);  // 使用变量控制宽度，默认为100%
+    &:hover {
+      color: $masthead-link-color-hover;
     }
-
-    &:hover:before {
-        transform: translateX(-50%) scaleX(1); // 在悬停时显示
-    }
-}
+  }
 
   button {
     position: absolute;
