@@ -4,37 +4,33 @@ layout: compress
 
 <!doctype html>
 <html lang="en" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
 
-  <body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
+  {% include browser-upgrade.html %}
+  {% include masthead.html %}
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  <div id="main" role="main" style="flex: 1;">
+    {% include sidebar.html %}
+  
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+      <div class="page__inner-wrap">
+        <section class="page__content" itemprop="text">
+          {{ content }}
+        </section>
+      </div>
+    </article>
+  </div>
 
-    <div id="main" role="main">
-      {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
-        </div>
-      </article>
-    </div>
-
-   <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-    
-    {% include scripts.html %}
-    
-  </body>
+  <footer class="page__footer">
+    {% include footer/custom.html %}
+    {% include footer.html %}
+  </footer>
+  
+  {% include scripts.html %}
+</body>
 </html>
