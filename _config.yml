@@ -23,7 +23,7 @@ baidu_site_verification  :  #get baidu_site_verification from https://ziyuan.bai
 author:
   name             : "Ke liu (刘可)"
   avatar           : "images/lkprofile11.png"
-  #bio              : 
+  bio              : "Ph.D. candidate"
   location         : "Nanjing, China"
   employer         : "Southeast University"
   pubmed           : 
