@@ -120,12 +120,7 @@
 }
 
 .author__name {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
     margin-bottom: 40px;
-  }
 }
 
 .sidebar .author__name {
