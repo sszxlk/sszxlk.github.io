@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Ke Liu's Personal Homepage"
-description              : "A Ph.D. student in Architecture"
+# description              : "A Ph.D. student in Architecture"
 repository               : "sszxlk/sszxlk.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -22,7 +22,7 @@ baidu_site_verification  :  #get baidu_site_verification from https://ziyuan.bai
 # Site Author
 author:
   name             : "Ke liu (刘可)"
-  avatar           : "images/lkprofile111.png"
+  avatar           : "images/lkprofile11.png"
   bio              : 
   location         : "Nanjing, China"
   employer         : "Southeast University"
