@@ -9,7 +9,7 @@
   margin-top: 3em;  // 确保 footer 下面有足够的间隔
   color: #fff;  // 将文字颜色改为纯白色
   background-color: #000;  // 将背景颜色改为黑色
-  border-top: 1px solid darken(#000, 5%);  // 深黑色边框
+  border-top: 1px solid #333;  // 使用深灰色边框
   padding: 2em 1em;  // 统一 padding 设置
 
   a {
