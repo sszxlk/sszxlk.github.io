@@ -24,9 +24,9 @@ author:
   name             : "Ke liu (刘可)"
   avatar           : "images/lkprofile11.png"
   bio              : "Ph.D. candidate"
-  location         : "Nanjing, China"
-  employer         : "Southeast University"
-  pubmed           : "https://www.webofscience.com/wos/author/record/MDS-9583-2025"
+  # location         : "Nanjing, China"
+  # employer         : "Southeast University"
+  wos              : "https://www.webofscience.com/wos/author/record/MDS-9583-2025"
   googlescholar    : "https://scholar.google.com/citations?user=lUeTVD4AAAAJ"
   email            : "uuliuke@gmail.com"
   researchgate     : 
